@@ -1,0 +1,42 @@
+<servers>
+  <server id="857945831519813672">
+    <role id="0">
+      <user>453867292850257920</user>
+      <commander>453867292850257920</commander>
+      <date>23.09.2023 22:55:30</date>
+      <description>432</description>
+    </role>
+  </server>
+  <server id="857945831519813672">
+    <role id="1155170840011354184">
+      <user>453867292850257920</user>
+      <commander>453867292850257920</commander>
+      <date>23.09.2023 22:56:30</date>
+      <description>432</description>
+    </role>
+  </server>
+  <server id="857945831519813672">
+    <role id="1155171550371266610">
+      <user>453867292850257920</user>
+      <commander>453867292850257920</commander>
+      <date>23.09.2023 22:59:19</date>
+      <description>Тестовая роль</description>
+    </role>
+  </server>
+  <server id="857945831519813672">
+    <role id="0">
+      <user>453867292850257920</user>
+      <commander>453867292850257920</commander>
+      <date>23.09.2023 23:31:32</date>
+      <description>Тестовая роль 2</description>
+    </role>
+  </server>
+  <server id="857945831519813672">
+    <role id="0">
+      <user>723426297480740916</user>
+      <commander>453867292850257920</commander>
+      <date>23.09.2023 23:50:37</date>
+      <description>Первый протестировал Role Giver</description>
+    </role>
+  </server>
+</servers>
