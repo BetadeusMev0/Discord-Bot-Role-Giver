@@ -22,7 +22,9 @@ namespace DB_Role_Giver
 
             _client.SlashCommandExecuted += SlashCommandHandler;
 
-            var token = File.ReadAllText("E:\\CS_LOGS\\DB_Role_Giver\\token.txt");
+            string path = File.ReadAllText("path.TXT");
+
+            var token = File.ReadAllText(path);
             
 
             await _client.LoginAsync(TokenType.Bot, token);
