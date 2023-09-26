@@ -1,0 +1,2 @@
+E:\VS PROJECT\DB RoleGiver\DB RoleGiver\bin\Release\net6.0\publish\win-x64\DB RoleGiver.pdb
+E:\VS PROJECT\DB RoleGiver\DB RoleGiver\bin\Release\net6.0\publish\win-x64\DB RoleGiver.exe
