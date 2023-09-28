@@ -1,16 +1,10 @@
 <servers>
-  <server id="857945831519813672">
+  <server id="857945831519813672" mode="off">
     <role id="1155184462422876220">
       <user>723426297480740916</user>
       <commander>453867292850257920</commander>
       <date>23.09.2023 23:50:37</date>
       <description>Первый протестировал Role Giver</description>
-    </role>
-    <role id="1156181673663283251">
-      <user>453867292850257920</user>
-      <commander>453867292850257920</commander>
-      <date>26.09.2023 17:53:10</date>
-      <description>nvb</description>
     </role>
   </server>
 </servers>
