@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Discord-Bot-Role-Giver\\DB RoleGiver\\DB RoleGiver.csproj": {}
+    "E:\\VS PROJECT\\DB RoleGiver\\DB RoleGiver\\DB RoleGiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Discord-Bot-Role-Giver\\DB RoleGiver\\DB RoleGiver.csproj": {
+    "E:\\VS PROJECT\\DB RoleGiver\\DB RoleGiver\\DB RoleGiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Discord-Bot-Role-Giver\\DB RoleGiver\\DB RoleGiver.csproj",
+        "projectUniqueName": "E:\\VS PROJECT\\DB RoleGiver\\DB RoleGiver\\DB RoleGiver.csproj",
         "projectName": "DB RoleGiver",
-        "projectPath": "C:\\Users\\User\\Desktop\\Discord-Bot-Role-Giver\\DB RoleGiver\\DB RoleGiver.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Discord-Bot-Role-Giver\\DB RoleGiver\\obj\\",
+        "projectPath": "E:\\VS PROJECT\\DB RoleGiver\\DB RoleGiver\\DB RoleGiver.csproj",
+        "packagesPath": "C:\\Users\\wlade\\.nuget\\packages\\",
+        "outputPath": "E:\\VS PROJECT\\DB RoleGiver\\DB RoleGiver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

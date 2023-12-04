@@ -1,0 +1,504 @@
+Role: Role Giver Tester
+user: Генерал Таченко 
+commander: Дилетант 
+date: 23.09.2023 23:50:37 
+description: Первый протестировал Role Giver 
+
+Role: RockAndStone
+user: Генерал Таченко 
+commander: Дилетант 
+date: 24.09.2023 18:28:49 
+description: За отличные достижения в DRG 
+
+Role: Rythm
+user: undefined 
+commander: undefined 
+date: 25.06.2021 11:32:26 
+description: none 
+
+Role: Ayanami Rei
+user: Дилетант 
+commander: Дилетант 
+date: 05.09.2023 16:18:32 
+description: none 
+
+Role: Role Giver
+user:  
+commander:  
+date: 21.09.2023 10:07:41 
+description: none 
+
+Role: Associate
+user: undefined 
+commander: undefined 
+date: 15.07.2023 14:08:41 
+description: none 
+
+Role: wf: Верховный Жнец
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 08.06.2023 14:46:35 
+description: none 
+
+Role: caporegime
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 15.07.2023 13:59:02 
+description: none 
+
+Role: Лудоман
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 05.04.2023 11:49:27 
+description: none 
+
+Role: Нога
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 30.07.2023 15:10:14 
+description: В жопе нога 
+
+Role: Молодой и спортивный
+user: undefined 
+commander: undefined 
+date: 21.02.2022 6:15:30 
+description: none 
+
+Role: компрессор
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 20.09.2023 14:24:06 
+description: none 
+
+Role: гидрофоб
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 29.07.2023 10:39:44 
+description: none 
+
+Role: Associate
+user: undefined 
+commander: undefined 
+date: 15.07.2023 14:01:31 
+description: none 
+
+Role: Jesus
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 28.07.2023 13:08:59 
+description: none 
+
+Role: Генерал - Дискорд
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 19.05.2023 14:02:34 
+description: none 
+
+Role: Человек
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 25.06.2021 12:02:12 
+description: none 
+
+Role: Дед мороз СССР
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 26.09.2023 14:32:42 
+description: none 
+
+Role: undefined
+user: undefined 
+commander: undefined 
+date: 31.07.2023 13:27:42 
+description: none 
+
+Role: Багет
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 04.08.2023 14:47:56 
+description: none 
+
+Role: Фея крёстная сука
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 23.08.2023 15:38:30 
+description: none 
+
+Role: Одинокий странник
+user: undefined 
+commander: undefined 
+date: 28.06.2023 12:59:17 
+description: none 
+
+Role: Загадочьный
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 03.05.2023 13:09:09 
+description: none 
+
+Role: Главный DJ
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 23.03.2023 10:24:28 
+description: none 
+
+Role: Dungeon Master
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 29.07.2023 9:17:53 
+description: none 
+
+Role: Человек-Магнит
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 28.03.2023 14:19:22 
+description: none 
+
+Role: Hydra
+user: undefined 
+commander: undefined 
+date: 02.03.2022 9:03:46 
+description: none 
+
+Role: DRG: Бурила
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 25.06.2023 12:47:03 
+description: none 
+
+Role: А?
+user: Дилетант 
+commander: Дилетант 
+date: 30.07.2023 15:09:46 
+description: none 
+
+Role: молодой и пассивный
+user: undefined 
+commander: undefined 
+date: 21.02.2022 6:15:57 
+description: none 
+
+Role: Regime
+user: undefined 
+commander: undefined 
+date: 15.07.2023 13:58:53 
+description: none 
+
+Role: Сonsigliere
+user: undefined 
+commander: undefined 
+date: 13.04.2023 17:00:01 
+description: none 
+
+Role: "Dead inside"
+user: Дилетант 
+commander: Дилетант 
+date: 21.02.2022 6:05:24 
+description: none 
+
+Role: Сходивший в Далёкие Дали
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 15.05.2023 12:14:26 
+description: none 
+
+Role: wf: Бесполезный
+user: Дилетант 
+commander: Дилетант 
+date: 08.06.2023 14:46:22 
+description: none 
+
+Role: "ОХОТНИК"
+user: Дилетант 
+commander: Дилетант 
+date: 29.08.2023 16:43:08 
+description: none 
+
+Role: ???
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 13.04.2023 16:08:13 
+description: none 
+
+Role: Я
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 27.07.2023 15:13:05 
+description: none 
+
+Role: Котик❤
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 05.09.2023 16:09:33 
+description: none 
+
+Role: ЪУЪ
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 29.06.2023 13:14:28 
+description: none 
+
+Role: Minerea♪
+user: undefined 
+commander: undefined 
+date: 13.03.2023 15:32:02 
+description: none 
+
+Role: паленый прокурор
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 28.03.2023 14:14:55 
+description: none 
+
+Role: молодой и перспективный
+user: undefined 
+commander: undefined 
+date: 21.02.2022 6:14:55 
+description: none 
+
+Role: Сторожила :)
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 07.04.2023 11:23:12 
+description: none 
+
+Role: Матрица
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 05.09.2023 16:17:58 
+description: none 
+
+Role: Буржуй
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 01.04.2023 16:34:41 
+description: none 
+
+Role: VK Music Bot
+user: undefined 
+commander: undefined 
+date: 11.03.2022 5:37:52 
+description: none 
+
+Role: Полоскун
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 28.04.2023 12:23:10 
+description: none 
+
+Role: @everyone
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 25.06.2021 11:30:26 
+description: none 
+
+Role: Философ
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 13.09.2023 16:35:28 
+description: none 
+
+Role: Волейбольный мячик
+user: undefined 
+commander: undefined 
+date: 27.09.2023 6:49:38 
+description: none 
+
+Role: Server Booster
+user: undefined 
+commander: undefined 
+date: 13.04.2023 15:43:04 
+description: none 
+
+Role: Foe5 *устаревшее*
+user: undefined 
+commander: undefined 
+date: 20.03.2023 12:45:43 
+description: none 
+
+Role: wf: Мастер Хаоса
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 08.06.2023 14:45:55 
+description: none 
+
+Role: повелитель Жориков
+user: Дилетант 
+commander: Дилетант 
+date: 29.08.2023 14:46:53 
+description: none 
+
+Role: Midjourney Bot
+user: undefined 
+commander: undefined 
+date: 03.06.2023 7:40:17 
+description: none 
+
+Role: Паприка and Кумыс
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 05.04.2023 11:37:21 
+description: none 
+
+Role: invisible admin
+user: undefined 
+commander: undefined 
+date: 12.05.2023 10:55:44 
+description: none 
+
+Role: Дед мороз ебучий
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 29.03.2023 14:31:24 
+description: none 
+
+Role: Бета тестер
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 26.04.2023 11:28:40 
+description: none 
+
+Role: Бедуины Тёмных Пустынь
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 27.06.2023 9:29:02 
+description: none 
+
+Role: печенька
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 18.05.2023 16:35:17 
+description: none 
+
+Role: Волшебник
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 21.02.2022 6:10:43 
+description: Заебал колдовать 
+
+Role: Молодой Повар
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 06.06.2023 12:30:11 
+description: none 
+
+Role: Autorità corrotte
+user:  
+commander:  
+date: 21.02.2022 6:08:11 
+description: none 
+
+Role: Вездессущий
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 18.05.2023 14:27:45 
+description: none 
+
+Role: НИхуясе)
+user: Дилетант 
+commander: Дилетант 
+date: 27.09.2023 14:28:30 
+description: none 
+
+Role: Giovane Don
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 15.07.2023 13:56:01 
+description: none 
+
+Role: Павлик
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 04.08.2023 18:05:11 
+description: none 
+
+Role: Шалунишка
+user: Дилетант 
+commander: Дилетант 
+date: 28.04.2023 12:22:48 
+description: none 
+
+Role: Привлекатель Маток
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 27.07.2023 15:12:27 
+description: none 
+
+Role: ЧТОооо?????
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 30.07.2023 15:09:58 
+description: none 
+
+Role: Джорджио Кальпачо
+user: Giorgio Calpacho 
+commander: Giorgio Calpacho 
+date: 19.04.2023 6:30:30 
+description: none 
+
+Role: Don
+user: Дилетант 
+commander: Дилетант 
+date: 15.07.2023 13:54:41 
+description: none 
+
+Role: Bot_Nihil
+user: undefined 
+commander: undefined 
+date: 26.04.2023 11:55:14 
+description: none 
+
+Role: FredBoat♪♪
+user: undefined 
+commander: undefined 
+date: 12.11.2022 9:32:50 
+description: none 
+
+Role: MEE6
+user: undefined 
+commander: undefined 
+date: 02.03.2022 9:00:17 
+description: none 
+
+Role: Сударь
+user: Дилетант 
+commander: Дилетант 
+date: 22.07.2023 17:52:33 
+description: none 
+
+Role: Главный доебщик
+user: Генерал Таченко 
+commander: Генерал Таченко 
+date: 20.03.2023 9:37:24 
+description: none 
+
+Role: Генерал ткаченко(Мафиозни)
+user: Генерал Таченко 
+commander: Giorgio Calpacho 
+date: 29.09.2023 21:04:00 
+description: За заслуги Хуй пойми какие 
+
+Role: Панин 2.0
+user: Генерал Таченко 
+commander: Дилетант 
+date: 29.09.2023 21:42:44 
+description: Человек забавляется с ногами 
+
+Role: Дед
+user: Генерал Таченко 
+commander: Giorgio Calpacho 
+date: 07.11.2023 18:32:20 
+description: none 
+
+Role: Ворчун
+user: Генерал Таченко 
+commander: Giorgio Calpacho 
+date: 07.11.2023 18:32:43 
+description: none 
+
+Role: ворчун 2
+user: Генерал Таченко 
+commander: Giorgio Calpacho 
+date: 07.11.2023 18:34:23 
+description: Ворчун из смурфиков 
+

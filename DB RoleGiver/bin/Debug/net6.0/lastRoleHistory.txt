@@ -1,0 +1,594 @@
+Role: Associate
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 15.07.2023 14:01:31 
+description: none 
+
+Role: Midjourney Bot
+user: Undefined 
+commander: Undefined 
+date: 03.06.2023 7:40:17 
+description: none 
+
+Role: Фея крёстная сука
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 23.08.2023 15:38:30 
+description: none 
+
+Role: diletant
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 8:37:58 
+description: none 
+
+Role: молодой и пассивный
+user: Undefined 
+commander: Undefined 
+date: 21.02.2022 6:15:57 
+description: none 
+
+Role: das
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 13:56:44 
+description: none 
+
+Role: Дед мороз ебучий
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 29.03.2023 14:31:24 
+description: none 
+
+Role: Statbot
+user: Undefined 
+commander: Undefined 
+date: 05.11.2023 15:44:26 
+description: none 
+
+Role: Сторожила :)
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 07.04.2023 11:23:12 
+description: none 
+
+Role: Панин 2.0
+user: Undefined 
+commander: Undefined 
+date: 29.09.2023 14:42:44 
+description: none 
+
+Role: Генерал - Дискорд
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 19.05.2023 14:02:34 
+description: none 
+
+Role: Сходивший в Далёкие Дали
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 15.05.2023 12:14:26 
+description: none 
+
+Role: Генерал ткаченко(Мафиозни)
+user: Undefined 
+commander: Undefined 
+date: 29.09.2023 14:04:02 
+description: none 
+
+Role: Человек-Магнит
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 28.03.2023 14:19:22 
+description: none 
+
+Role: Regime
+user: Undefined 
+commander: Undefined 
+date: 15.07.2023 13:58:53 
+description: none 
+
+Role: Бедуины Тёмных Пустынь
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 27.06.2023 9:29:02 
+description: none 
+
+Role: гидрофоб
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 29.07.2023 10:39:44 
+description: none 
+
+Role: ЧТОооо?????
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 30.07.2023 15:09:58 
+description: none 
+
+Role: Главный доебщик
+user: Undefined 
+commander: Undefined 
+date: 20.03.2023 9:37:24 
+description: none 
+
+Role: Философ
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 13.09.2023 16:35:28 
+description: none 
+
+Role: Нога
+user: Undefined 
+commander: Undefined 
+date: 30.07.2023 15:10:14 
+description: none 
+
+Role: Gusic
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 14:56:45 
+description: none 
+
+Role: Волшебник
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 21.02.2022 6:10:43 
+description: none 
+
+Role: Джорджио Кальпачо
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 19.04.2023 6:30:30 
+description: none 
+
+Role: WF
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 25.10.2023 12:39:50 
+description: none 
+
+Role: Bot_Nihil
+user: Undefined 
+commander: Undefined 
+date: 26.04.2023 11:55:14 
+description: none 
+
+Role: Я
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 27.07.2023 15:13:05 
+description: none 
+
+Role: wf: Верховный Жнец
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 08.06.2023 14:46:35 
+description: none 
+
+Role: test
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 8:14:03 
+description: none 
+
+Role: Дед
+user: Undefined 
+commander: Undefined 
+date: 07.11.2023 11:32:20 
+description: none 
+
+Role: А?
+user: Дилетант 
+commander: Дилетант 
+date: 30.07.2023 15:09:46 
+description: none 
+
+Role: Лудоман
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 05.04.2023 11:49:27 
+description: none 
+
+Role: Полоскун
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 28.04.2023 12:23:10 
+description: none 
+
+Role: Giovane Don
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 15.07.2023 13:56:01 
+description: none 
+
+Role: Don
+user: Дилетант 
+commander: Дилетант 
+date: 15.07.2023 13:54:41 
+description: none 
+
+Role: Волейбольный мячик
+user: Undefined 
+commander: Undefined 
+date: 27.09.2023 6:49:38 
+description: none 
+
+Role: Ворчун
+user: Undefined 
+commander: Undefined 
+date: 07.11.2023 11:32:43 
+description: none 
+
+Role: компрессор
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 20.09.2023 14:24:06 
+description: none 
+
+Role: НИхуясе)
+user: Дилетант 
+commander: Дилетант 
+date: 27.09.2023 14:28:30 
+description: none 
+
+Role: повелитель Жориков
+user: Дилетант 
+commander: Дилетант 
+date: 29.08.2023 14:46:53 
+description: none 
+
+Role: ???
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 13.04.2023 16:08:13 
+description: none 
+
+Role: Шалунишка
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 28.04.2023 12:22:48 
+description: none 
+
+Role: diletant
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 8:38:40 
+description: none 
+
+Role: Role Giver Tester
+user: Undefined 
+commander: Undefined 
+date: 23.09.2023 16:50:38 
+description: none 
+
+Role: Сударь
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 22.07.2023 17:52:33 
+description: none 
+
+Role: ЪУЪ
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 29.06.2023 13:14:28 
+description: none 
+
+Role: паленый прокурор
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 28.03.2023 14:14:55 
+description: none 
+
+Role: Паприка and Кумыс
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 05.04.2023 11:37:21 
+description: none 
+
+Role: general
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 15:25:05 
+description: none 
+
+Role: Одинокий странник
+user: Undefined 
+commander: Undefined 
+date: 28.06.2023 12:59:17 
+description: none 
+
+Role: Associate
+user: Undefined 
+commander: Undefined 
+date: 15.07.2023 14:08:41 
+description: none 
+
+Role: wf: Мастер Хаоса
+user: Undefined 
+commander: Undefined 
+date: 08.06.2023 14:45:55 
+description: none 
+
+Role: RockAndStone
+user: Undefined 
+commander: Undefined 
+date: 24.09.2023 11:30:48 
+description: none 
+
+Role: tester
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 8:29:23 
+description: none 
+
+Role: Начинающий CoubMaker
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 12.11.2023 17:36:10 
+description: none 
+
+Role: печенька
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 18.05.2023 16:35:17 
+description: none 
+
+Role: Матрица
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 05.09.2023 16:17:58 
+description: none 
+
+Role: Дед мороз СССР
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 26.09.2023 14:32:42 
+description: none 
+
+Role: Багет
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 04.08.2023 14:47:56 
+description: none 
+
+Role: MEE6
+user: Undefined 
+commander: Undefined 
+date: 02.03.2022 9:00:17 
+description: none 
+
+Role: Rythm
+user: Undefined 
+commander: Undefined 
+date: 25.06.2021 11:32:26 
+description: none 
+
+Role: Foe5 *устаревшее*
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 20.03.2023 12:45:43 
+description: none 
+
+Role: wf: Бесполезный
+user: Дилетант 
+commander: Дилетант 
+date: 08.06.2023 14:46:22 
+description: none 
+
+Role: Главный DJ
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 23.03.2023 10:24:28 
+description: none 
+
+Role: Autorità corrotte
+user: Minerea♪ 
+commander: Minerea♪ 
+date: 21.02.2022 6:08:11 
+description: none 
+
+Role: Павлик
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 04.08.2023 18:05:11 
+description: none 
+
+Role: Буржуй
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 01.04.2023 16:34:41 
+description: none 
+
+Role: Dungeon Master
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 29.07.2023 9:17:53 
+description: none 
+
+Role: "ОХОТНИК"
+user: Дилетант 
+commander: Дилетант 
+date: 29.08.2023 16:43:08 
+description: none 
+
+Role: Котик❤
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 05.09.2023 16:09:33 
+description: none 
+
+Role: @everyone
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 25.06.2021 11:30:26 
+description: none 
+
+Role: Ayanami Rei
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 05.09.2023 16:18:32 
+description: none 
+
+Role: новая роль
+user: Undefined 
+commander: Undefined 
+date: 25.10.2023 12:39:43 
+description: none 
+
+Role: Server Booster
+user: Undefined 
+commander: Undefined 
+date: 13.04.2023 15:43:04 
+description: none 
+
+Role: Содержанка
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 01.12.2023 11:40:40 
+description: none 
+
+Role: das
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 13:56:33 
+description: none 
+
+Role: Hydra
+user: Undefined 
+commander: Undefined 
+date: 02.03.2022 9:03:46 
+description: none 
+
+Role: Вездессущий
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 18.05.2023 14:27:45 
+description: none 
+
+Role: invisible admin
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 12.05.2023 10:55:44 
+description: none 
+
+Role: DRG: Бурила
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 25.06.2023 12:47:03 
+description: none 
+
+Role: Молодой и спортивный
+user: Undefined 
+commander: Undefined 
+date: 21.02.2022 6:15:30 
+description: none 
+
+Role: Role Giver
+user: Role Giver 
+commander: Role Giver 
+date: 21.09.2023 10:07:41 
+description: none 
+
+Role: молодой и перспективный
+user: Undefined 
+commander: Undefined 
+date: 21.02.2022 6:14:55 
+description: none 
+
+Role: Человек
+user: Foe5 Yto4ka 
+commander: Foe5 Yto4ka 
+date: 25.06.2021 12:02:12 
+description: none 
+
+Role: "Dead inside"
+user: Дилетант 
+commander: Дилетант 
+date: 21.02.2022 6:05:24 
+description: none 
+
+Role: Minerea♪
+user: Minerea♪ 
+commander: Minerea♪ 
+date: 13.03.2023 15:32:02 
+description: none 
+
+Role: DeadShot блять
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 18.11.2023 12:37:35 
+description: none 
+
+Role: Привлекатель Маток
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 27.07.2023 15:12:27 
+description: none 
+
+Role: caporegime
+user: Undefined 
+commander: Undefined 
+date: 15.07.2023 13:59:02 
+description: none 
+
+Role: VK Music Bot
+user: Undefined 
+commander: Undefined 
+date: 11.03.2022 5:37:52 
+description: none 
+
+Role: Загадочьный
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 03.05.2023 13:09:09 
+description: none 
+
+Role: FredBoat♪♪
+user: Undefined 
+commander: Undefined 
+date: 12.11.2022 9:32:50 
+description: none 
+
+Role: Молодой Повар
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 06.06.2023 12:30:11 
+description: none 
+
+Role: ворчун 2
+user: Undefined 
+commander: Undefined 
+date: 07.11.2023 11:34:23 
+description: none 
+
+Role: Jesus
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 28.07.2023 13:08:59 
+description: none 
+
+Role: Сonsigliere
+user: Undefined 
+commander: Undefined 
+date: 13.04.2023 17:00:01 
+description: none 
+
+Role: новая роль
+user: Undefined 
+commander: Undefined 
+date: 01.12.2023 11:40:32 
+description: none 
+
+Role: Бета тестер
+user: Giorgio Calpajo 
+commander: Giorgio Calpajo 
+date: 26.04.2023 11:28:40 
+description: none 
+
+Role: das
+user: Undefined 
+commander: Undefined 
+date: 04.12.2023 14:30:11 
+description: none 
+

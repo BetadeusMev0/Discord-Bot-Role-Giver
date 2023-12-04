@@ -7,7 +7,7 @@ using System.Data;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace DB_Role_Giver 
+namespace DB_Role_Giver
 {
     class Program
     {
@@ -43,12 +43,12 @@ namespace DB_Role_Giver
             return Task.CompletedTask;
         }
 
-        public async Task Costyl(SocketGuild sda) 
+        public async Task Costyl(SocketGuild sda)
         {
             await Client_Ready();
         }
 
-        public async Task Client_Ready() 
+        public async Task Client_Ready()
         {
 
             var guilds = _client.Guilds.ToList();
@@ -70,10 +70,10 @@ namespace DB_Role_Giver
             var roleModify = new SlashCommandBuilder();
 
             var removeMissRoles = new SlashCommandBuilder();
-            
+
             roleList.WithName("role-list").WithDescription("Display the role history of this server");
             roleListFile.WithName("role-list-file").WithDescription("Return a txt file with the history of server roles");
-            findRole.WithName("find-role").WithDescription("Find the role in the history of this server").AddOption("role", ApplicationCommandOptionType.Role, "name of the role you want to find", isRequired:true) ;
+            findRole.WithName("find-role").WithDescription("Find the role in the history of this server").AddOption("role", ApplicationCommandOptionType.Role, "name of the role you want to find", isRequired: true);
             roleRemove.WithName("role-remove").WithDescription("Remove a Role from the server and databases").AddOption("role", ApplicationCommandOptionType.Role, "name of the role you want to remove", isRequired: true);
             clearMode.WithName("clear-mode").WithDescription("remove unnecessary text enable/disable");
             allRole.WithName("all-role-add").WithDescription("add existing roles to the database");
@@ -91,7 +91,7 @@ namespace DB_Role_Giver
 
             try
             {
-                foreach (var guild in guilds) 
+                foreach (var guild in guilds)
                 {
                     await guild.CreateApplicationCommandAsync(giveRole.Build());
                     await guild.CreateApplicationCommandAsync(roleList.Build());
@@ -114,7 +114,6 @@ namespace DB_Role_Giver
             {
                 case "give-role":
                     await HandlerGiveRoleCommand(command);
-                    
                     break;
                 case "role-list":
                     await HandlerRoleListCommand(command);
@@ -144,16 +143,24 @@ namespace DB_Role_Giver
                     await HandlerRemoveMissRolesCommand(command);
                     break;
             }
-            
+
         }
 
-        private async Task HandlerRemoveMissRolesCommand(SocketSlashCommand command) 
+        private async Task HandlerRemoveMissRolesCommand(SocketSlashCommand command)
         {
+
+            string err;
+            if ((err = PermisionsCheck(command.GuildId, command.User.Id)) != null)
+            {
+                command.RespondAsync(err);
+                return;
+            }
+
             var guild = _client.GetGuild((ulong)command.GuildId);
 
-            
 
-            
+
+
 
             XmlDocument xDoc = new();
 
@@ -179,21 +186,28 @@ namespace DB_Role_Giver
 
         private async Task HandlerRoleModifyAddCommand(SocketSlashCommand command)
         {
-            
+            string err;
+            if ((err = PermisionsCheck(command.GuildId, command.User.Id)) != null)
+            {
+                command.RespondAsync(err);
+                return;
+            }
+
+
             XmlDocument xDoc = new();
             xDoc.Load("logs.xml");
 
             XmlElement? xRoot = xDoc.DocumentElement;
 
             var guildId = (ulong)command.GuildId;
-            
-            
+
+
 
             foreach (XmlElement xNode in xRoot)
             {
                 if (ulong.Parse(xNode.Attributes.GetNamedItem("id").Value) == guildId)
                 {
-                    
+
                     foreach (XmlNode xRole in xNode)
                     {
                         if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == ((SocketRole)(command.Data.Options.First().Value)).Id)
@@ -209,36 +223,42 @@ namespace DB_Role_Giver
 
             }
             xDoc.Save("logs.xml");
-            command.RespondAsync( "Successfully");
-        }
-
-
-        private async Task HandlerAllRoleAddCommand(SocketSlashCommand command) 
-        {
-            Role role;
-            var guild = _client.GetGuild((ulong)command.GuildId);
-            foreach (var oldRole in guild.Roles) 
-            {
-                if (oldRole.Members != null && oldRole.Members.Any()) role = new Role(oldRole.Id, "none" ,oldRole.Members.First(), oldRole.Members.First(), guild, oldRole.CreatedAt);
-                else role = new Role(oldRole.Id, "none", null, null, guild, oldRole.CreatedAt);
-                if (!await CheckRolePresence(oldRole.Id, guild.Id)) Logging(role);
-            }
             command.RespondAsync("Successfully");
         }
 
-        private async Task<bool> CheckRolePresence(ulong roleId, ulong serverId) 
+
+        private async Task HandlerAllRoleAddCommand(SocketSlashCommand command)
+        {
+            string err;
+            if ((err = PermisionsCheck(command.GuildId, command.User.Id)) != null)
+            {
+                command.RespondAsync(err);
+                return;
+            }
+            Role role;
+            var guild = _client.GetGuild((ulong)command.GuildId);
+            foreach (var oldRole in guild.Roles)
+            {
+                if (oldRole.Members != null && oldRole.Members.Any()) role = new Role(oldRole.Id, "none", oldRole.Members.Where(x => x != null).First(), oldRole.Members.Where(x => x != null).First(), guild, oldRole.CreatedAt);
+                else role = new Role(oldRole.Id, "none", null, null, guild, oldRole.CreatedAt);
+                if (!await CheckRolePresence(oldRole.Id, guild.Id)) Logging(role);
+            }
+            await command.RespondAsync("Successfully");
+        }
+
+        private async Task<bool> CheckRolePresence(ulong roleId, ulong serverId)
         {
             bool result = false;
             XmlDocument xDoc = new();
             xDoc.Load("logs.xml");
             XmlElement xRoot = xDoc.DocumentElement;
-            foreach (XmlElement xServer in xRoot) 
+            foreach (XmlElement xServer in xRoot)
             {
-                if (ulong.Parse(xServer.Attributes.GetNamedItem("id").Value) == serverId) 
+                if (ulong.Parse(xServer.Attributes.GetNamedItem("id").Value) == serverId)
                 {
-                    foreach (XmlNode xRole in xServer.ChildNodes) 
+                    foreach (XmlNode xRole in xServer.ChildNodes)
                     {
-                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == roleId) 
+                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == roleId)
                         {
                             result = true;
                             break;
@@ -251,7 +271,7 @@ namespace DB_Role_Giver
             return result;
         }
 
-        private async Task HandlerClearModeCommand(SocketSlashCommand command) 
+        private async Task HandlerClearModeCommand(SocketSlashCommand command)
         {
             bool isOn = false;
             XmlDocument xDoc = new();
@@ -259,36 +279,37 @@ namespace DB_Role_Giver
 
             XmlElement xRoot = xDoc.DocumentElement;
 
-            foreach (XmlNode xNode in xRoot) 
+            foreach (XmlNode xNode in xRoot)
             {
-                if (xNode.Name == "server" && Convert.ToUInt64(xNode.Attributes.GetNamedItem("id").Value) == command.GuildId) 
+                if (xNode.Name == "server" && Convert.ToUInt64(xNode.Attributes.GetNamedItem("id").Value) == command.GuildId)
                 {
                     if (xNode.Attributes.GetNamedItem("mode") != null)
                     {
                         if (xNode.Attributes.GetNamedItem("mode").Value != "on") { xNode.Attributes.GetNamedItem("mode").Value = "on"; isOn = true; }
                         else xNode.Attributes.GetNamedItem("mode").Value = "off";
                     }
-                    else 
+                    else
                     {
-                        var xAttr =  xDoc.CreateAttribute("mode");
+                        var xAttr = xDoc.CreateAttribute("mode");
                         xAttr.AppendChild(xDoc.CreateTextNode("on"));
-                        xNode.Attributes.Append(xAttr); 
+                        xNode.Attributes.Append(xAttr);
                         isOn = true;
                     }
                 }
 
             }
             xDoc.Save("logs.xml");
-            if (isOn)command.RespondAsync("Clear mode enable");
-            else command.RespondAsync("Clear mode disable");
+            if (isOn) await command.RespondAsync("Clear mode enable");
+            else await command.RespondAsync("Clear mode disable");
         }
 
 
         private async Task HandlerGiveRoleCommand(SocketSlashCommand command)
         {
-
-            if (!PermisionsCheck(command))
+            string err;
+            if ((err = PermisionsCheck(command.GuildId, command.User.Id)) != null)
             {
+                command.RespondAsync(err);
                 return;
             }
             string roleDescription = "none";
@@ -296,32 +317,32 @@ namespace DB_Role_Giver
             var guild = _client.GetGuild((ulong)command.GuildId);
             var options = command.Data.Options.ToList();
 
-           // Color clr = new Color((long)options[2].Value / 100 , ((long)options[2].Value % 100) / 10 , ((long)options[2].Value % 100) % 10);
+            // Color clr = new Color((long)options[2].Value / 100 , ((long)options[2].Value % 100) / 10 , ((long)options[2].Value % 100) % 10);
 
             Random random = new();
 
-            Color clr = new((byte)random.Next(0,255),(byte)random.Next(0,255),(byte)random.Next(0,255));
+            Color clr = new((byte)random.Next(0, 255), (byte)random.Next(0, 255), (byte)random.Next(0, 255));
             var new_role = await guild.CreateRoleAsync(options[1].Value.ToString(), null, clr);
 
 
 
- 
 
 
-           
+
+
             guild.GetUser(((SocketGuildUser)options[0].Value).Id).AddRoleAsync(new_role.Id);
 
 
 
             if (command.Data.Options.Count > 2 && options[2] != null) roleDescription = options[2].Value.ToString();
-            
+
 
             Role role = new(new_role.Id, roleDescription, ((Discord.IGuildUser)options[0].Value), guild.GetUser(command.User.Id), guild);
 
-          
+
 
             await Logging(role);
-            command.RespondAsync("Successfully");
+            await command.RespondAsync("Successfully");
         }
 
 
@@ -355,8 +376,8 @@ namespace DB_Role_Giver
 
             XmlElement userElem = xDoc.CreateElement("user");
             XmlText userText;
-           if (role.user != null)  userText = xDoc.CreateTextNode(role.user.Id.ToString());
-           else userText = xDoc.CreateTextNode("0");
+            if (role.user != null) userText = xDoc.CreateTextNode(role.user.Id.ToString());
+            else userText = xDoc.CreateTextNode("0");
 
             XmlElement commanderElem = xDoc.CreateElement("commander");
             XmlText commanderText;
@@ -373,27 +394,27 @@ namespace DB_Role_Giver
                 descriptionText = xDoc.CreateTextNode(role.description);
             }
             else descriptionText = xDoc.CreateTextNode("-");
-        
-           
-           
+
+
+
 
 
             roleAttr.AppendChild(roleText);
-    
+
             userElem.AppendChild(userText);
             commanderElem.AppendChild(commanderText);
             dateElem.AppendChild(dateText);
             descriptionElem.AppendChild(descriptionText);
-          
+
             roleElem.Attributes.Append(roleAttr);
-           
-           
+
+
             roleElem.AppendChild(userElem);
-            
+
             roleElem.AppendChild(commanderElem);
-           
+
             roleElem.AppendChild(dateElem);
-           
+
             roleElem.AppendChild(descriptionElem);
 
             if (!serverExists)
@@ -410,7 +431,7 @@ namespace DB_Role_Giver
                 serverElem.AppendChild(roleElem);
                 xRoot?.AppendChild(serverElem);
             }
-            else 
+            else
             {
                 xmlNode.AppendChild(roleElem);
             }
@@ -419,41 +440,42 @@ namespace DB_Role_Giver
 
         }
 
-        private async Task HandlerRoleListCommand(SocketSlashCommand command) 
+        private async Task HandlerRoleListCommand(SocketSlashCommand command)
         {
             string result = "";
-            XmlDocument xDoc = new();
-            xDoc.Load("logs.xml");
+            XmlDocument xDoc = ErrorProcessing.OpenXDoc("logs.xml");
+            //xDoc.Load("logs.xml");
             XmlElement? xRoot = xDoc.DocumentElement;
             var guildId = (ulong)command.GuildId;
             var guild = _client.GetGuild(guildId);
 
             bool clearMode = false;
 
-            foreach (XmlElement xnode in xRoot) 
+            foreach (XmlElement xnode in xRoot)
             {
                 var attr = xnode.Attributes.GetNamedItem("id");
-                if (ulong.Parse( attr.Value ) == guildId) 
+                if (ulong.Parse(attr.Value) == guildId)
                 {
                     int i = 0;
-                    foreach (XmlElement xRole in xnode.ChildNodes) 
+                    foreach (XmlElement xRole in xnode.ChildNodes)
                     {
-                        if (i++ < xnode.ChildNodes.Count - 5) { continue;  }
+                        if (i++ < xnode.ChildNodes.Count - 5) { continue; }
                         if (xnode.Attributes.GetNamedItem("mode").Value == "on") clearMode = true;
                         var roleId = xRole.Attributes.GetNamedItem("id");
-                        if(!clearMode)result += "Role: ";
+                        if (!clearMode) result += "Role: ";
                         if (roleId.Value != "0" && guild.GetRole(ulong.Parse(roleId.Value)) != null) result += guild.GetRole(ulong.Parse(roleId.Value)).Name;
                         else result += "undefined";
                         result += "\n";
                         foreach (XmlNode childNode in xRole.ChildNodes)
                         {
-                            if(!clearMode)result += childNode.LocalName;
+                            if (!clearMode) result += childNode.LocalName;
 
-                            if(!clearMode)result += ": ";
+                            if (!clearMode) result += ": ";
                             if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                             else
                             {
-                                result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
+                                var roleUser = guild.GetUser(ulong.Parse(childNode.InnerText));
+                                result += roleUser?.DisplayName ?? roleUser?.Nickname ?? roleUser?.GlobalName ?? roleUser?.Username ?? "Undefined";
 
                             }
                             result += ' ';
@@ -463,7 +485,7 @@ namespace DB_Role_Giver
                     }
                     break;
                 }
-                
+
             }
 
             var guildUser = (SocketGuildUser)command.User;
@@ -478,7 +500,7 @@ namespace DB_Role_Giver
 
 
 
-            command.RespondAsync(embed: embedBuiler.Build());
+            await command.RespondAsync(embed: embedBuiler.Build());
         }
 
         private async Task HandlerRoleListFileCommand(SocketSlashCommand command)
@@ -510,7 +532,9 @@ namespace DB_Role_Giver
                             if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                             else
                             {
-                                result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
+                                var roleUser = guild.GetUser(ulong.Parse(childNode.InnerText));
+                                result += roleUser?.DisplayName ?? roleUser?.Nickname ?? roleUser?.GlobalName ?? roleUser?.Username ?? "Undefined";
+                                Console.WriteLine(roleUser?.DisplayName + roleUser?.Nickname + roleUser?.GlobalName + roleUser?.Username);
                             }
                             result += ' ';
                             result += '\n';
@@ -523,11 +547,11 @@ namespace DB_Role_Giver
 
             File.WriteAllText("lastRoleHistory.txt", result);
 
-            command.RespondWithFileAsync("lastRoleHistory.txt");
-           
+             await command.RespondWithFileAsync("lastRoleHistory.txt");
+
         }
 
-        private async Task HandlerFindRoleCommand(SocketSlashCommand command) 
+        private async Task HandlerFindRoleCommand(SocketSlashCommand command)
         {
             string result = "n/a";
 
@@ -542,27 +566,28 @@ namespace DB_Role_Giver
             var guild = _client.GetGuild(guildId);
             bool clearMode = false;
 
-            foreach (XmlElement xNode in xRoot) 
+            foreach (XmlElement xNode in xRoot)
             {
-                if (ulong.Parse(xNode.Attributes.GetNamedItem("id").Value) == guildId) 
+                if (ulong.Parse(xNode.Attributes.GetNamedItem("id").Value) == guildId)
                 {
-                    if(xNode.Attributes.GetNamedItem("mode").Value == "on")clearMode = true;
-                    foreach (XmlNode xRole in xNode) 
+                    if (xNode.Attributes.GetNamedItem("mode").Value == "on") clearMode = true;
+                    foreach (XmlNode xRole in xNode)
                     {
-                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == ((SocketRole)(command.Data.Options.First().Value)).Id) 
+                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == ((SocketRole)(command.Data.Options.First().Value)).Id)
                         {
                             roleName = guild.GetRole(ulong.Parse(xRole.Attributes.GetNamedItem("id").Value)).Name;
                             result = "";
                             foreach (XmlNode childNode in xRole.ChildNodes)
                             {
-                                if (!clearMode) 
-                                 result += childNode.LocalName;
+                                if (!clearMode)
+                                    result += childNode.LocalName;
 
-                                if(!clearMode)result += ": ";
+                                if (!clearMode) result += ": ";
                                 if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                                 else
                                 {
-                                    result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
+                                    var roleUser = guild.GetUser(ulong.Parse(childNode.InnerText));
+                                    result += roleUser?.DisplayName ?? roleUser?.Nickname ?? roleUser?.GlobalName ?? roleUser?.Username ?? "Undefined";
                                 }
                                 result += ' ';
                                 result += '\n';
@@ -573,7 +598,7 @@ namespace DB_Role_Giver
 
                     break;
                 }
-                
+
             }
 
 
@@ -589,11 +614,16 @@ namespace DB_Role_Giver
 
 
 
-            command.RespondAsync(embed: embedBuiler.Build());
+            await command.RespondAsync(embed: embedBuiler.Build());
         }
-        private async Task HandlerRoleRemoveCommand(SocketSlashCommand command) 
+        private async Task HandlerRoleRemoveCommand(SocketSlashCommand command)
         {
-
+            string err;
+            if ((err = PermisionsCheck(command.GuildId, command.User.Id)) != null)
+            {
+                command.RespondAsync(err);
+                return;
+            }
 
             ((SocketRole)command.Data.Options.First().Value).DeleteAsync();
 
@@ -603,13 +633,13 @@ namespace DB_Role_Giver
 
             XmlElement? xRoot = xDoc.DocumentElement;
 
-            foreach (XmlElement xNode in xRoot) 
+            foreach (XmlElement xNode in xRoot)
             {
-                if (ulong.Parse(xNode.Attributes.GetNamedItem("id").Value) == command.GuildId) 
+                if (ulong.Parse(xNode.Attributes.GetNamedItem("id").Value) == command.GuildId)
                 {
-                    foreach (XmlNode xRole in xNode) 
+                    foreach (XmlNode xRole in xNode)
                     {
-                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == ((SocketRole)(command.Data.Options.First().Value)).Id) 
+                        if (ulong.Parse(xRole.Attributes.GetNamedItem("id").Value) == ((SocketRole)(command.Data.Options.First().Value)).Id)
                         {
                             xNode.RemoveChild(xRole);
                         }
@@ -619,22 +649,20 @@ namespace DB_Role_Giver
 
 
             xDoc.Save("logs.xml");
-            command.RespondAsync("Successfully");
+            await command.RespondAsync("Successfully");
         }
 
 
 
-        bool PermisionsCheck(SocketSlashCommand command)
+        string? PermisionsCheck(ulong? guildId, ulong userId)
         {
-            bool result = false;
-            if (command.GuildId != null)
+            string? result = null;
+            if (guildId != null)
             {
-                result = _client.GetGuild((ulong)command.GuildId).CurrentUser.GuildPermissions.ManageRoles;
-                if (result = false) command.RespondAsync("The bot does not have rights to manage roles");
-                if (result && !_client.GetGuild((ulong)command.GuildId).GetUser(command.User.Id).GuildPermissions.ManageRoles) 
+                if (!_client.GetGuild((ulong)guildId).CurrentUser.GuildPermissions.ManageRoles) result = "The bot does not have rights to manage roles";
+                if (result == null && !_client.GetGuild((ulong)guildId).GetUser(userId).GuildPermissions.ManageRoles)
                 {
-                    command.RespondAsync("You do not have rights to manage roles");
-                    result = false;
+                    result = "You do not have rights to manage roles";
                 }
             }
             return result;
@@ -642,10 +670,10 @@ namespace DB_Role_Giver
 
     }
 
-  
-    static class ErrorProcessing 
+
+    static class ErrorProcessing
     {
-        public static XmlDocument? OpenXDoc(string fileName) 
+        public static XmlDocument? OpenXDoc(string fileName)
         {
             XmlDocument xDoc = new();
             try
@@ -653,10 +681,10 @@ namespace DB_Role_Giver
                 xDoc.Load("logs.xml");
                 if (xDoc.DocumentElement.Name != "servers") xDoc = null;
             }
-            catch { xDoc = null; }
+            catch { File.WriteAllText("logs.xml", "<servers>\n</servers>"); xDoc.Load("logs.xml"); }
             return xDoc;
         }
-        
+
     }
 
 
@@ -669,13 +697,13 @@ namespace DB_Role_Giver
         public IGuildUser commander;
         public DateTime date;
         public SocketGuild guild;
-        public  Role()
+        public Role()
         {
             description = "";
             id = 0;
             date = DateTime.Now;
         }
-       public Role(ulong id, string description, IGuildUser user, IGuildUser commander, SocketGuild guild) 
+        public Role(ulong id, string description, IGuildUser user, IGuildUser commander, SocketGuild guild)
         {
             this.id = id;
             this.description = description;
