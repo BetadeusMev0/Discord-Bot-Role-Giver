@@ -287,6 +287,10 @@ namespace DB_Role_Giver
         private async Task HandlerGiveRoleCommand(SocketSlashCommand command)
         {
 
+            if (!PermisionsCheck(command))
+            {
+                return;
+            }
             string roleDescription = "none";
 
             var guild = _client.GetGuild((ulong)command.GuildId);
@@ -449,8 +453,8 @@ namespace DB_Role_Giver
                             if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                             else
                             {
-                                if (childNode.InnerText != "0" && guild.GetUser(ulong.Parse(childNode.InnerText)) != null) result += guild.GetUser(ulong.Parse(childNode.InnerText)).Nickname;
-                                else result += "undefined";
+                                result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
+
                             }
                             result += ' ';
                             result += '\n';
@@ -506,8 +510,7 @@ namespace DB_Role_Giver
                             if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                             else
                             {
-                                if (childNode.InnerText != "0") result += guild.GetUser(ulong.Parse(childNode.InnerText)).Nickname;
-                                else result += "undefined";
+                                result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
                             }
                             result += ' ';
                             result += '\n';
@@ -559,8 +562,7 @@ namespace DB_Role_Giver
                                 if (childNode.Name != "user" && childNode.Name != "commander") result += childNode.InnerText;
                                 else
                                 {
-                                    if (childNode.InnerText != "0" && guild.GetUser(ulong.Parse(childNode.InnerText)) != null) result += guild.GetUser(ulong.Parse(childNode.InnerText)).Nickname;
-                                    else result += "undefined";
+                                    result += guild.GetUser(ulong.Parse(childNode.InnerText))?.Nickname ?? "undefined";
                                 }
                                 result += ' ';
                                 result += '\n';
@@ -591,9 +593,7 @@ namespace DB_Role_Giver
         }
         private async Task HandlerRoleRemoveCommand(SocketSlashCommand command) 
         {
-            
 
-            
 
             ((SocketRole)command.Data.Options.First().Value).DeleteAsync();
 
@@ -622,11 +622,43 @@ namespace DB_Role_Giver
             command.RespondAsync("Successfully");
         }
 
-       
 
 
+        bool PermisionsCheck(SocketSlashCommand command)
+        {
+            bool result = false;
+            if (command.GuildId != null)
+            {
+                result = _client.GetGuild((ulong)command.GuildId).CurrentUser.GuildPermissions.ManageRoles;
+                if (result = false) command.RespondAsync("The bot does not have rights to manage roles");
+                if (result && !_client.GetGuild((ulong)command.GuildId).GetUser(command.User.Id).GuildPermissions.ManageRoles) 
+                {
+                    command.RespondAsync("You do not have rights to manage roles");
+                    result = false;
+                }
+            }
+            return result;
+        }
 
     }
+
+  
+    static class ErrorProcessing 
+    {
+        public static XmlDocument? OpenXDoc(string fileName) 
+        {
+            XmlDocument xDoc = new();
+            try
+            {
+                xDoc.Load("logs.xml");
+                if (xDoc.DocumentElement.Name != "servers") xDoc = null;
+            }
+            catch { xDoc = null; }
+            return xDoc;
+        }
+        
+    }
+
 
 
     class Role
