@@ -1,0 +1,2 @@
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\publish\win-x86\DB RoleGiver .NET 8.0.pdb
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\publish\win-x86\DB RoleGiver .NET 8.0.exe

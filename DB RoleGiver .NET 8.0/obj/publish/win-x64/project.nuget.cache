@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "WE6+E8FkbBgyQB3nWk8mzycQKLmbYoA8LAVvNaa0a/tRSYLLIpdG/LeQKB6z6cOkIVT1fd1kcQPEJNwhd63MNQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BetaDeus\\source\\repos\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net\\3.13.1\\discord.net.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.commands\\3.13.1\\discord.net.commands.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.core\\3.13.1\\discord.net.core.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.interactions\\3.13.1\\discord.net.interactions.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.rest\\3.13.1\\discord.net.rest.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.webhook\\3.13.1\\discord.net.webhook.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\discord.net.websocket\\3.13.1\\discord.net.websocket.3.13.1.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.2\\microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\system.interactive.async\\5.0.0\\system.interactive.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

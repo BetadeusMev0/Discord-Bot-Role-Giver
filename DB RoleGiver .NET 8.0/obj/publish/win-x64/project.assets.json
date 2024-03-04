@@ -1,0 +1,1422 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Discord.Net/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Commands": "3.13.1",
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Interactions": "3.13.1",
+          "Discord.Net.Rest": "3.13.1",
+          "Discord.Net.WebSocket": "3.13.1",
+          "Discord.Net.Webhook": "3.13.1"
+        }
+      },
+      "Discord.Net.Commands/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Core/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "System.Collections.Immutable": "5.0.0",
+          "System.Interactive.Async": "5.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Interactions/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1",
+          "Discord.Net.WebSocket": "3.13.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "System.Collections.Immutable": "5.0.0",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Rest/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Webhook/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.WebSocket/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/8.0.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.DotNet.ILCompiler.props": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Interactive.Async/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Async": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Linq.Async/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    },
+    "net8.0/win-x64": {
+      "Discord.Net/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Commands": "3.13.1",
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Interactions": "3.13.1",
+          "Discord.Net.Rest": "3.13.1",
+          "Discord.Net.WebSocket": "3.13.1",
+          "Discord.Net.Webhook": "3.13.1"
+        }
+      },
+      "Discord.Net.Commands/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Commands.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Core/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2",
+          "System.Collections.Immutable": "5.0.0",
+          "System.Interactive.Async": "5.0.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Interactions/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1",
+          "Discord.Net.WebSocket": "3.13.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "System.Collections.Immutable": "5.0.0",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Interactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Rest/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Rest.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.Webhook/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.Webhook.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Discord.Net.WebSocket/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Discord.Net.Core": "3.13.1",
+          "Discord.Net.Rest": "3.13.1"
+        },
+        "compile": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Discord.Net.WebSocket.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "runtime.win-x64.Microsoft.DotNet.ILCompiler": "8.0.2"
+        },
+        "build": {
+          "build/Microsoft.DotNet.ILCompiler.props": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "runtime.win-x64.Microsoft.DotNet.ILCompiler/8.0.2": {
+        "type": "package"
+      },
+      "System.Collections.Immutable/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Interactive.Async/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Async": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Interactive.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Linq.Async/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Linq.Async.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Discord.Net/3.13.1": {
+      "sha512": "5zZopFGjuVUVYoMgPt+IiquamKkAWeoAWPX/XHJeHJmQneIQOPhs8AWC9V0vfdSi8wNA9lTrsVT3ZqtxQC1jKw==",
+      "type": "package",
+      "path": "discord.net/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.3.13.1.nupkg.sha512",
+        "discord.net.nuspec"
+      ]
+    },
+    "Discord.Net.Commands/3.13.1": {
+      "sha512": "PsCZRipA8N7SitIogWqtgdeadwRoof5rskFIqHKeL4FmvncPaw9LTbEMVkeH8C674Wh/RITLkOApeDhx358fFQ==",
+      "type": "package",
+      "path": "discord.net.commands/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.commands.3.13.1.nupkg.sha512",
+        "discord.net.commands.nuspec",
+        "lib/net461/Discord.Net.Commands.dll",
+        "lib/net461/Discord.Net.Commands.xml",
+        "lib/net5.0/Discord.Net.Commands.dll",
+        "lib/net5.0/Discord.Net.Commands.xml",
+        "lib/net6.0/Discord.Net.Commands.dll",
+        "lib/net6.0/Discord.Net.Commands.xml",
+        "lib/netstandard2.0/Discord.Net.Commands.dll",
+        "lib/netstandard2.0/Discord.Net.Commands.xml",
+        "lib/netstandard2.1/Discord.Net.Commands.dll",
+        "lib/netstandard2.1/Discord.Net.Commands.xml"
+      ]
+    },
+    "Discord.Net.Core/3.13.1": {
+      "sha512": "MoEOBCTS6XrBoObKU6Aq9plpbB5ytN9ktu76Ae/GRFu6n8TYqerREcJv5xlLs59BLL5dK2Act18itJ/Kmq+3DQ==",
+      "type": "package",
+      "path": "discord.net.core/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.core.3.13.1.nupkg.sha512",
+        "discord.net.core.nuspec",
+        "lib/net461/Discord.Net.Core.dll",
+        "lib/net461/Discord.Net.Core.xml",
+        "lib/net5.0/Discord.Net.Core.dll",
+        "lib/net5.0/Discord.Net.Core.xml",
+        "lib/net6.0/Discord.Net.Core.dll",
+        "lib/net6.0/Discord.Net.Core.xml",
+        "lib/netstandard2.0/Discord.Net.Core.dll",
+        "lib/netstandard2.0/Discord.Net.Core.xml",
+        "lib/netstandard2.1/Discord.Net.Core.dll",
+        "lib/netstandard2.1/Discord.Net.Core.xml"
+      ]
+    },
+    "Discord.Net.Interactions/3.13.1": {
+      "sha512": "ET3Sqbhu6IcYJ0dtvCYJ1uSPLVjEGtVOU7Uh/XhyGTu50b5qpkYA8mckTkequBk+ZN4VTxRx5wF+TCcDsS+KBg==",
+      "type": "package",
+      "path": "discord.net.interactions/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.interactions.3.13.1.nupkg.sha512",
+        "discord.net.interactions.nuspec",
+        "lib/net461/Discord.Net.Interactions.dll",
+        "lib/net461/Discord.Net.Interactions.xml",
+        "lib/net5.0/Discord.Net.Interactions.dll",
+        "lib/net5.0/Discord.Net.Interactions.xml",
+        "lib/net6.0/Discord.Net.Interactions.dll",
+        "lib/net6.0/Discord.Net.Interactions.xml",
+        "lib/netstandard2.0/Discord.Net.Interactions.dll",
+        "lib/netstandard2.0/Discord.Net.Interactions.xml",
+        "lib/netstandard2.1/Discord.Net.Interactions.dll",
+        "lib/netstandard2.1/Discord.Net.Interactions.xml"
+      ]
+    },
+    "Discord.Net.Rest/3.13.1": {
+      "sha512": "vWL2jYOg6AN+PtAuWJtIeulf6ZT+La8P8ACoUeZncNIqi35HZ1bQ/KlN9iVi8B4tYxpPUpwQnc+XVZ0AgvzlGQ==",
+      "type": "package",
+      "path": "discord.net.rest/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.rest.3.13.1.nupkg.sha512",
+        "discord.net.rest.nuspec",
+        "lib/net461/Discord.Net.Rest.dll",
+        "lib/net461/Discord.Net.Rest.xml",
+        "lib/net5.0/Discord.Net.Rest.dll",
+        "lib/net5.0/Discord.Net.Rest.xml",
+        "lib/net6.0/Discord.Net.Rest.dll",
+        "lib/net6.0/Discord.Net.Rest.xml",
+        "lib/netstandard2.0/Discord.Net.Rest.dll",
+        "lib/netstandard2.0/Discord.Net.Rest.xml",
+        "lib/netstandard2.1/Discord.Net.Rest.dll",
+        "lib/netstandard2.1/Discord.Net.Rest.xml"
+      ]
+    },
+    "Discord.Net.Webhook/3.13.1": {
+      "sha512": "MccahSOxxM6YsM8KA3uEejsN6/KmBZFADw5bOdmHW/LoZt64hzktvf3rzY60nAy5jJaMtBtn1EX5l9zwe6QgXA==",
+      "type": "package",
+      "path": "discord.net.webhook/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.webhook.3.13.1.nupkg.sha512",
+        "discord.net.webhook.nuspec",
+        "lib/net5.0/Discord.Net.Webhook.dll",
+        "lib/net5.0/Discord.Net.Webhook.xml",
+        "lib/net6.0/Discord.Net.Webhook.dll",
+        "lib/net6.0/Discord.Net.Webhook.xml",
+        "lib/netstandard2.0/Discord.Net.Webhook.dll",
+        "lib/netstandard2.0/Discord.Net.Webhook.xml",
+        "lib/netstandard2.1/Discord.Net.Webhook.dll",
+        "lib/netstandard2.1/Discord.Net.Webhook.xml"
+      ]
+    },
+    "Discord.Net.WebSocket/3.13.1": {
+      "sha512": "LGEfqJ+N1u+2xnsGA3FRY8nboxKLeNu7mY3BnIZsEBY47Xm7Xfq8Eicv5Ipy50nZr5aeKzv+D4GPZMLPIQZBNA==",
+      "type": "package",
+      "path": "discord.net.websocket/3.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PackageLogo.png",
+        "discord.net.websocket.3.13.1.nupkg.sha512",
+        "discord.net.websocket.nuspec",
+        "lib/net461/Discord.Net.WebSocket.dll",
+        "lib/net461/Discord.Net.WebSocket.xml",
+        "lib/net5.0/Discord.Net.WebSocket.dll",
+        "lib/net5.0/Discord.Net.WebSocket.xml",
+        "lib/net6.0/Discord.Net.WebSocket.dll",
+        "lib/net6.0/Discord.Net.WebSocket.xml",
+        "lib/netstandard2.0/Discord.Net.WebSocket.dll",
+        "lib/netstandard2.0/Discord.Net.WebSocket.xml",
+        "lib/netstandard2.1/Discord.Net.WebSocket.dll",
+        "lib/netstandard2.1/Discord.Net.WebSocket.xml"
+      ]
+    },
+    "Microsoft.DotNet.ILCompiler/8.0.2": {
+      "sha512": "rGE3+673xn1iZJCoMIuUb9lhqje4DiCB+qTyPAJ97Bw15c4N69ZbMAO/GJyxchaoLJCHIPXP52hwxEzqrllwCg==",
+      "type": "package",
+      "path": "microsoft.dotnet.ilcompiler/8.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/BuildFrameworkNativeObjects.proj",
+        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
+        "build/Microsoft.DotNet.ILCompiler.props",
+        "build/Microsoft.NETCore.Native.Publish.targets",
+        "build/Microsoft.NETCore.Native.Unix.targets",
+        "build/Microsoft.NETCore.Native.Windows.targets",
+        "build/Microsoft.NETCore.Native.targets",
+        "build/NativeAOT.natstepfilter",
+        "build/NativeAOT.natvis",
+        "build/WindowsAPIs.txt",
+        "build/findvcvarsall.bat",
+        "microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+        "microsoft.dotnet.ilcompiler.nuspec",
+        "runtime.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.dll",
+        "tools/netstandard/ILCompiler.Build.Tasks.pdb"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.2": {
+      "sha512": "hKTrehpfVzOhAz0mreaTAZgbz0DrMEbWq4n3hAo8Ks6WdxdqQhNPvzOqn9VygKuWf1bmxPdraqzTaXriO/sn0A==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/8.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "runtime.win-x64.Microsoft.DotNet.ILCompiler/8.0.2": {
+      "sha512": "qPn08sh4b0nT1dz7LVI1NKH2Q4/wyjUtIh4CZrxoWbLdIKxtq791PQV3Y4Y4kGUjfptYHVddLv4LHbfNOrrm7Q==",
+      "type": "package",
+      "path": "runtime.win-x64.microsoft.dotnet.ilcompiler/8.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/BuildFrameworkNativeObjects.proj",
+        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
+        "build/Microsoft.DotNet.ILCompiler.props",
+        "build/Microsoft.NETCore.Native.Publish.targets",
+        "build/Microsoft.NETCore.Native.Unix.targets",
+        "build/Microsoft.NETCore.Native.Windows.targets",
+        "build/Microsoft.NETCore.Native.targets",
+        "build/NativeAOT.natstepfilter",
+        "build/NativeAOT.natvis",
+        "build/WindowsAPIs.txt",
+        "build/findvcvarsall.bat",
+        "framework/Microsoft.CSharp.dll",
+        "framework/Microsoft.CSharp.pdb",
+        "framework/Microsoft.VisualBasic.Core.dll",
+        "framework/Microsoft.VisualBasic.Core.pdb",
+        "framework/Microsoft.VisualBasic.dll",
+        "framework/Microsoft.VisualBasic.pdb",
+        "framework/Microsoft.Win32.Primitives.dll",
+        "framework/Microsoft.Win32.Primitives.pdb",
+        "framework/Microsoft.Win32.Registry.dll",
+        "framework/Microsoft.Win32.Registry.pdb",
+        "framework/System.AppContext.dll",
+        "framework/System.AppContext.pdb",
+        "framework/System.Buffers.dll",
+        "framework/System.Buffers.pdb",
+        "framework/System.Collections.Concurrent.dll",
+        "framework/System.Collections.Concurrent.pdb",
+        "framework/System.Collections.Immutable.dll",
+        "framework/System.Collections.Immutable.pdb",
+        "framework/System.Collections.NonGeneric.dll",
+        "framework/System.Collections.NonGeneric.pdb",
+        "framework/System.Collections.Specialized.dll",
+        "framework/System.Collections.Specialized.pdb",
+        "framework/System.Collections.dll",
+        "framework/System.Collections.pdb",
+        "framework/System.ComponentModel.Annotations.dll",
+        "framework/System.ComponentModel.Annotations.pdb",
+        "framework/System.ComponentModel.DataAnnotations.dll",
+        "framework/System.ComponentModel.DataAnnotations.pdb",
+        "framework/System.ComponentModel.EventBasedAsync.dll",
+        "framework/System.ComponentModel.EventBasedAsync.pdb",
+        "framework/System.ComponentModel.Primitives.dll",
+        "framework/System.ComponentModel.Primitives.pdb",
+        "framework/System.ComponentModel.TypeConverter.dll",
+        "framework/System.ComponentModel.TypeConverter.pdb",
+        "framework/System.ComponentModel.dll",
+        "framework/System.ComponentModel.pdb",
+        "framework/System.Configuration.dll",
+        "framework/System.Configuration.pdb",
+        "framework/System.Console.dll",
+        "framework/System.Console.pdb",
+        "framework/System.Core.dll",
+        "framework/System.Core.pdb",
+        "framework/System.Data.Common.dll",
+        "framework/System.Data.Common.pdb",
+        "framework/System.Data.DataSetExtensions.dll",
+        "framework/System.Data.DataSetExtensions.pdb",
+        "framework/System.Data.dll",
+        "framework/System.Data.pdb",
+        "framework/System.Diagnostics.Contracts.dll",
+        "framework/System.Diagnostics.Contracts.pdb",
+        "framework/System.Diagnostics.Debug.dll",
+        "framework/System.Diagnostics.Debug.pdb",
+        "framework/System.Diagnostics.DiagnosticSource.dll",
+        "framework/System.Diagnostics.DiagnosticSource.pdb",
+        "framework/System.Diagnostics.FileVersionInfo.dll",
+        "framework/System.Diagnostics.FileVersionInfo.pdb",
+        "framework/System.Diagnostics.Process.dll",
+        "framework/System.Diagnostics.Process.pdb",
+        "framework/System.Diagnostics.StackTrace.dll",
+        "framework/System.Diagnostics.StackTrace.pdb",
+        "framework/System.Diagnostics.TextWriterTraceListener.dll",
+        "framework/System.Diagnostics.TextWriterTraceListener.pdb",
+        "framework/System.Diagnostics.Tools.dll",
+        "framework/System.Diagnostics.Tools.pdb",
+        "framework/System.Diagnostics.TraceSource.dll",
+        "framework/System.Diagnostics.TraceSource.pdb",
+        "framework/System.Diagnostics.Tracing.dll",
+        "framework/System.Diagnostics.Tracing.pdb",
+        "framework/System.Drawing.Primitives.dll",
+        "framework/System.Drawing.Primitives.pdb",
+        "framework/System.Drawing.dll",
+        "framework/System.Drawing.pdb",
+        "framework/System.Dynamic.Runtime.dll",
+        "framework/System.Dynamic.Runtime.pdb",
+        "framework/System.Formats.Asn1.dll",
+        "framework/System.Formats.Asn1.pdb",
+        "framework/System.Formats.Tar.dll",
+        "framework/System.Formats.Tar.pdb",
+        "framework/System.Globalization.Calendars.dll",
+        "framework/System.Globalization.Calendars.pdb",
+        "framework/System.Globalization.Extensions.dll",
+        "framework/System.Globalization.Extensions.pdb",
+        "framework/System.Globalization.dll",
+        "framework/System.Globalization.pdb",
+        "framework/System.IO.Compression.Brotli.dll",
+        "framework/System.IO.Compression.Brotli.pdb",
+        "framework/System.IO.Compression.FileSystem.dll",
+        "framework/System.IO.Compression.FileSystem.pdb",
+        "framework/System.IO.Compression.Native.dll",
+        "framework/System.IO.Compression.Native.pdb",
+        "framework/System.IO.Compression.ZipFile.dll",
+        "framework/System.IO.Compression.ZipFile.pdb",
+        "framework/System.IO.Compression.dll",
+        "framework/System.IO.Compression.pdb",
+        "framework/System.IO.FileSystem.AccessControl.dll",
+        "framework/System.IO.FileSystem.AccessControl.pdb",
+        "framework/System.IO.FileSystem.DriveInfo.dll",
+        "framework/System.IO.FileSystem.DriveInfo.pdb",
+        "framework/System.IO.FileSystem.Primitives.dll",
+        "framework/System.IO.FileSystem.Primitives.pdb",
+        "framework/System.IO.FileSystem.Watcher.dll",
+        "framework/System.IO.FileSystem.Watcher.pdb",
+        "framework/System.IO.FileSystem.dll",
+        "framework/System.IO.FileSystem.pdb",
+        "framework/System.IO.IsolatedStorage.dll",
+        "framework/System.IO.IsolatedStorage.pdb",
+        "framework/System.IO.MemoryMappedFiles.dll",
+        "framework/System.IO.MemoryMappedFiles.pdb",
+        "framework/System.IO.Pipes.AccessControl.dll",
+        "framework/System.IO.Pipes.AccessControl.pdb",
+        "framework/System.IO.Pipes.dll",
+        "framework/System.IO.Pipes.pdb",
+        "framework/System.IO.UnmanagedMemoryStream.dll",
+        "framework/System.IO.UnmanagedMemoryStream.pdb",
+        "framework/System.IO.dll",
+        "framework/System.IO.pdb",
+        "framework/System.Linq.Expressions.dll",
+        "framework/System.Linq.Expressions.pdb",
+        "framework/System.Linq.Parallel.dll",
+        "framework/System.Linq.Parallel.pdb",
+        "framework/System.Linq.Queryable.dll",
+        "framework/System.Linq.Queryable.pdb",
+        "framework/System.Linq.dll",
+        "framework/System.Linq.pdb",
+        "framework/System.Memory.dll",
+        "framework/System.Memory.pdb",
+        "framework/System.Net.Http.Json.dll",
+        "framework/System.Net.Http.Json.pdb",
+        "framework/System.Net.Http.dll",
+        "framework/System.Net.Http.pdb",
+        "framework/System.Net.HttpListener.dll",
+        "framework/System.Net.HttpListener.pdb",
+        "framework/System.Net.Mail.dll",
+        "framework/System.Net.Mail.pdb",
+        "framework/System.Net.NameResolution.dll",
+        "framework/System.Net.NameResolution.pdb",
+        "framework/System.Net.NetworkInformation.dll",
+        "framework/System.Net.NetworkInformation.pdb",
+        "framework/System.Net.Ping.dll",
+        "framework/System.Net.Ping.pdb",
+        "framework/System.Net.Primitives.dll",
+        "framework/System.Net.Primitives.pdb",
+        "framework/System.Net.Quic.dll",
+        "framework/System.Net.Quic.pdb",
+        "framework/System.Net.Requests.dll",
+        "framework/System.Net.Requests.pdb",
+        "framework/System.Net.Security.dll",
+        "framework/System.Net.Security.pdb",
+        "framework/System.Net.ServicePoint.dll",
+        "framework/System.Net.ServicePoint.pdb",
+        "framework/System.Net.Sockets.dll",
+        "framework/System.Net.Sockets.pdb",
+        "framework/System.Net.WebClient.dll",
+        "framework/System.Net.WebClient.pdb",
+        "framework/System.Net.WebHeaderCollection.dll",
+        "framework/System.Net.WebHeaderCollection.pdb",
+        "framework/System.Net.WebProxy.dll",
+        "framework/System.Net.WebProxy.pdb",
+        "framework/System.Net.WebSockets.Client.dll",
+        "framework/System.Net.WebSockets.Client.pdb",
+        "framework/System.Net.WebSockets.dll",
+        "framework/System.Net.WebSockets.pdb",
+        "framework/System.Net.dll",
+        "framework/System.Net.pdb",
+        "framework/System.Numerics.Vectors.dll",
+        "framework/System.Numerics.Vectors.pdb",
+        "framework/System.Numerics.dll",
+        "framework/System.Numerics.pdb",
+        "framework/System.ObjectModel.dll",
+        "framework/System.ObjectModel.pdb",
+        "framework/System.Private.DataContractSerialization.dll",
+        "framework/System.Private.DataContractSerialization.pdb",
+        "framework/System.Private.Uri.dll",
+        "framework/System.Private.Uri.pdb",
+        "framework/System.Private.Xml.Linq.dll",
+        "framework/System.Private.Xml.Linq.pdb",
+        "framework/System.Private.Xml.dll",
+        "framework/System.Private.Xml.pdb",
+        "framework/System.Reflection.DispatchProxy.dll",
+        "framework/System.Reflection.DispatchProxy.pdb",
+        "framework/System.Reflection.Emit.ILGeneration.dll",
+        "framework/System.Reflection.Emit.ILGeneration.pdb",
+        "framework/System.Reflection.Emit.Lightweight.dll",
+        "framework/System.Reflection.Emit.Lightweight.pdb",
+        "framework/System.Reflection.Emit.dll",
+        "framework/System.Reflection.Emit.pdb",
+        "framework/System.Reflection.Extensions.dll",
+        "framework/System.Reflection.Extensions.pdb",
+        "framework/System.Reflection.Metadata.dll",
+        "framework/System.Reflection.Metadata.pdb",
+        "framework/System.Reflection.Primitives.dll",
+        "framework/System.Reflection.Primitives.pdb",
+        "framework/System.Reflection.TypeExtensions.dll",
+        "framework/System.Reflection.TypeExtensions.pdb",
+        "framework/System.Reflection.dll",
+        "framework/System.Reflection.pdb",
+        "framework/System.Resources.Reader.dll",
+        "framework/System.Resources.Reader.pdb",
+        "framework/System.Resources.ResourceManager.dll",
+        "framework/System.Resources.ResourceManager.pdb",
+        "framework/System.Resources.Writer.dll",
+        "framework/System.Resources.Writer.pdb",
+        "framework/System.Runtime.CompilerServices.Unsafe.dll",
+        "framework/System.Runtime.CompilerServices.Unsafe.pdb",
+        "framework/System.Runtime.CompilerServices.VisualC.dll",
+        "framework/System.Runtime.CompilerServices.VisualC.pdb",
+        "framework/System.Runtime.Extensions.dll",
+        "framework/System.Runtime.Extensions.pdb",
+        "framework/System.Runtime.Handles.dll",
+        "framework/System.Runtime.Handles.pdb",
+        "framework/System.Runtime.InteropServices.JavaScript.dll",
+        "framework/System.Runtime.InteropServices.JavaScript.pdb",
+        "framework/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "framework/System.Runtime.InteropServices.RuntimeInformation.pdb",
+        "framework/System.Runtime.InteropServices.dll",
+        "framework/System.Runtime.InteropServices.pdb",
+        "framework/System.Runtime.Intrinsics.dll",
+        "framework/System.Runtime.Intrinsics.pdb",
+        "framework/System.Runtime.Loader.dll",
+        "framework/System.Runtime.Loader.pdb",
+        "framework/System.Runtime.Numerics.dll",
+        "framework/System.Runtime.Numerics.pdb",
+        "framework/System.Runtime.Serialization.Formatters.dll",
+        "framework/System.Runtime.Serialization.Formatters.pdb",
+        "framework/System.Runtime.Serialization.Json.dll",
+        "framework/System.Runtime.Serialization.Json.pdb",
+        "framework/System.Runtime.Serialization.Primitives.dll",
+        "framework/System.Runtime.Serialization.Primitives.pdb",
+        "framework/System.Runtime.Serialization.Xml.dll",
+        "framework/System.Runtime.Serialization.Xml.pdb",
+        "framework/System.Runtime.Serialization.dll",
+        "framework/System.Runtime.Serialization.pdb",
+        "framework/System.Runtime.dll",
+        "framework/System.Runtime.pdb",
+        "framework/System.Security.AccessControl.dll",
+        "framework/System.Security.AccessControl.pdb",
+        "framework/System.Security.Claims.dll",
+        "framework/System.Security.Claims.pdb",
+        "framework/System.Security.Cryptography.Algorithms.dll",
+        "framework/System.Security.Cryptography.Algorithms.pdb",
+        "framework/System.Security.Cryptography.Cng.dll",
+        "framework/System.Security.Cryptography.Cng.pdb",
+        "framework/System.Security.Cryptography.Csp.dll",
+        "framework/System.Security.Cryptography.Csp.pdb",
+        "framework/System.Security.Cryptography.Encoding.dll",
+        "framework/System.Security.Cryptography.Encoding.pdb",
+        "framework/System.Security.Cryptography.OpenSsl.dll",
+        "framework/System.Security.Cryptography.OpenSsl.pdb",
+        "framework/System.Security.Cryptography.Primitives.dll",
+        "framework/System.Security.Cryptography.Primitives.pdb",
+        "framework/System.Security.Cryptography.X509Certificates.dll",
+        "framework/System.Security.Cryptography.X509Certificates.pdb",
+        "framework/System.Security.Cryptography.dll",
+        "framework/System.Security.Cryptography.pdb",
+        "framework/System.Security.Principal.Windows.dll",
+        "framework/System.Security.Principal.Windows.pdb",
+        "framework/System.Security.Principal.dll",
+        "framework/System.Security.Principal.pdb",
+        "framework/System.Security.SecureString.dll",
+        "framework/System.Security.SecureString.pdb",
+        "framework/System.Security.dll",
+        "framework/System.Security.pdb",
+        "framework/System.ServiceModel.Web.dll",
+        "framework/System.ServiceModel.Web.pdb",
+        "framework/System.ServiceProcess.dll",
+        "framework/System.ServiceProcess.pdb",
+        "framework/System.Text.Encoding.CodePages.dll",
+        "framework/System.Text.Encoding.CodePages.pdb",
+        "framework/System.Text.Encoding.Extensions.dll",
+        "framework/System.Text.Encoding.Extensions.pdb",
+        "framework/System.Text.Encoding.dll",
+        "framework/System.Text.Encoding.pdb",
+        "framework/System.Text.Encodings.Web.dll",
+        "framework/System.Text.Encodings.Web.pdb",
+        "framework/System.Text.Json.dll",
+        "framework/System.Text.Json.pdb",
+        "framework/System.Text.RegularExpressions.dll",
+        "framework/System.Text.RegularExpressions.pdb",
+        "framework/System.Threading.Channels.dll",
+        "framework/System.Threading.Channels.pdb",
+        "framework/System.Threading.Overlapped.dll",
+        "framework/System.Threading.Overlapped.pdb",
+        "framework/System.Threading.Tasks.Dataflow.dll",
+        "framework/System.Threading.Tasks.Dataflow.pdb",
+        "framework/System.Threading.Tasks.Extensions.dll",
+        "framework/System.Threading.Tasks.Extensions.pdb",
+        "framework/System.Threading.Tasks.Parallel.dll",
+        "framework/System.Threading.Tasks.Parallel.pdb",
+        "framework/System.Threading.Tasks.dll",
+        "framework/System.Threading.Tasks.pdb",
+        "framework/System.Threading.Thread.dll",
+        "framework/System.Threading.Thread.pdb",
+        "framework/System.Threading.ThreadPool.dll",
+        "framework/System.Threading.ThreadPool.pdb",
+        "framework/System.Threading.Timer.dll",
+        "framework/System.Threading.Timer.pdb",
+        "framework/System.Threading.dll",
+        "framework/System.Threading.pdb",
+        "framework/System.Transactions.Local.dll",
+        "framework/System.Transactions.Local.pdb",
+        "framework/System.Transactions.dll",
+        "framework/System.Transactions.pdb",
+        "framework/System.ValueTuple.dll",
+        "framework/System.ValueTuple.pdb",
+        "framework/System.Web.HttpUtility.dll",
+        "framework/System.Web.HttpUtility.pdb",
+        "framework/System.Web.dll",
+        "framework/System.Web.pdb",
+        "framework/System.Windows.dll",
+        "framework/System.Windows.pdb",
+        "framework/System.Xml.Linq.dll",
+        "framework/System.Xml.Linq.pdb",
+        "framework/System.Xml.ReaderWriter.dll",
+        "framework/System.Xml.ReaderWriter.pdb",
+        "framework/System.Xml.Serialization.dll",
+        "framework/System.Xml.Serialization.pdb",
+        "framework/System.Xml.XDocument.dll",
+        "framework/System.Xml.XDocument.pdb",
+        "framework/System.Xml.XPath.XDocument.dll",
+        "framework/System.Xml.XPath.XDocument.pdb",
+        "framework/System.Xml.XPath.dll",
+        "framework/System.Xml.XPath.pdb",
+        "framework/System.Xml.XmlDocument.dll",
+        "framework/System.Xml.XmlDocument.pdb",
+        "framework/System.Xml.XmlSerializer.dll",
+        "framework/System.Xml.XmlSerializer.pdb",
+        "framework/System.Xml.dll",
+        "framework/System.Xml.pdb",
+        "framework/System.dll",
+        "framework/System.pdb",
+        "framework/WindowsBase.dll",
+        "framework/WindowsBase.pdb",
+        "framework/mscorlib.dll",
+        "framework/mscorlib.pdb",
+        "framework/msquic.dll",
+        "framework/msquic.pdb",
+        "framework/netstandard.dll",
+        "framework/netstandard.pdb",
+        "mibc/DotNet_Adhoc.mibc",
+        "mibc/DotNet_FSharp.mibc",
+        "mibc/DotNet_FirstTimeXP.mibc",
+        "mibc/DotNet_HelloWorld.mibc",
+        "mibc/DotNet_OrchardCore.mibc",
+        "mibc/DotNet_TechEmpower.mibc",
+        "runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512",
+        "runtime.win-x64.microsoft.dotnet.ilcompiler.nuspec",
+        "sdk/Runtime.ServerGC.GuardCF.lib",
+        "sdk/Runtime.ServerGC.GuardCF.pdb",
+        "sdk/Runtime.ServerGC.lib",
+        "sdk/Runtime.ServerGC.pdb",
+        "sdk/Runtime.VxsortDisabled.lib",
+        "sdk/Runtime.VxsortDisabled.pdb",
+        "sdk/Runtime.VxsortEnabled.GuardCF.lib",
+        "sdk/Runtime.VxsortEnabled.GuardCF.pdb",
+        "sdk/Runtime.VxsortEnabled.lib",
+        "sdk/Runtime.VxsortEnabled.pdb",
+        "sdk/Runtime.WorkstationGC.lib",
+        "sdk/Runtime.WorkstationGC.pdb",
+        "sdk/System.Globalization.Native.Aot.GuardCF.lib",
+        "sdk/System.Globalization.Native.Aot.GuardCF.pdb",
+        "sdk/System.Globalization.Native.Aot.lib",
+        "sdk/System.Globalization.Native.Aot.pdb",
+        "sdk/System.IO.Compression.Native.Aot.GuardCF.lib",
+        "sdk/System.IO.Compression.Native.Aot.GuardCF.pdb",
+        "sdk/System.IO.Compression.Native.Aot.lib",
+        "sdk/System.IO.Compression.Native.Aot.pdb",
+        "sdk/System.Private.CoreLib.dll",
+        "sdk/System.Private.CoreLib.pdb",
+        "sdk/System.Private.CoreLib.xml",
+        "sdk/System.Private.DisabledReflection.dll",
+        "sdk/System.Private.DisabledReflection.pdb",
+        "sdk/System.Private.DisabledReflection.xml",
+        "sdk/System.Private.Reflection.Execution.dll",
+        "sdk/System.Private.Reflection.Execution.pdb",
+        "sdk/System.Private.Reflection.Execution.xml",
+        "sdk/System.Private.StackTraceMetadata.dll",
+        "sdk/System.Private.StackTraceMetadata.pdb",
+        "sdk/System.Private.StackTraceMetadata.xml",
+        "sdk/System.Private.TypeLoader.dll",
+        "sdk/System.Private.TypeLoader.pdb",
+        "sdk/System.Private.TypeLoader.xml",
+        "sdk/bootstrapper.GuardCF.obj",
+        "sdk/bootstrapper.GuardCF.pdb",
+        "sdk/bootstrapper.obj",
+        "sdk/bootstrapper.pdb",
+        "sdk/bootstrapperdll.GuardCF.obj",
+        "sdk/bootstrapperdll.GuardCF.pdb",
+        "sdk/bootstrapperdll.obj",
+        "sdk/bootstrapperdll.pdb",
+        "sdk/eventpipe-disabled.GuardCF.lib",
+        "sdk/eventpipe-disabled.GuardCF.pdb",
+        "sdk/eventpipe-disabled.lib",
+        "sdk/eventpipe-disabled.pdb",
+        "sdk/eventpipe-enabled.GuardCF.lib",
+        "sdk/eventpipe-enabled.GuardCF.pdb",
+        "sdk/eventpipe-enabled.lib",
+        "sdk/eventpipe-enabled.pdb",
+        "tools/ILCompiler.Compiler.pdb",
+        "tools/ILCompiler.DependencyAnalysisFramework.pdb",
+        "tools/ILCompiler.MetadataTransform.pdb",
+        "tools/ILCompiler.RyuJit.pdb",
+        "tools/ILCompiler.TypeSystem.pdb",
+        "tools/clrjit_universal_arm64_x64.dll",
+        "tools/clrjit_universal_arm_x64.dll",
+        "tools/clrjit_unix_x64_x64.dll",
+        "tools/clrjit_win_x64_x64.dll",
+        "tools/clrjit_win_x86_x64.dll",
+        "tools/ilc.exe",
+        "tools/ilc.pdb",
+        "tools/jitinterface_x64.dll",
+        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.dll",
+        "tools/netstandard/ILCompiler.Build.Tasks.pdb",
+        "tools/objwriter.dll"
+      ]
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "type": "package",
+      "path": "system.collections.immutable/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.5.0.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Interactive.Async/5.0.0": {
+      "sha512": "QaqhQVDiULcu4vm6o89+iP329HcK44cETHOYgy/jfEjtzeFy0ZxmuM7nel9ocjnKxEM4yh1mli7hgh8Q9o+/Iw==",
+      "type": "package",
+      "path": "system.interactive.async/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Interactive.Async.dll",
+        "lib/net461/System.Interactive.Async.xml",
+        "lib/netcoreapp3.1/System.Interactive.Async.dll",
+        "lib/netcoreapp3.1/System.Interactive.Async.xml",
+        "lib/netstandard2.0/System.Interactive.Async.dll",
+        "lib/netstandard2.0/System.Interactive.Async.xml",
+        "lib/netstandard2.1/System.Interactive.Async.dll",
+        "lib/netstandard2.1/System.Interactive.Async.xml",
+        "system.interactive.async.5.0.0.nupkg.sha512",
+        "system.interactive.async.nuspec"
+      ]
+    },
+    "System.Linq.Async/5.0.0": {
+      "sha512": "cPtIuuH8TIjVHSi2ewwReWGW1PfChPE0LxPIDlfwVcLuTM9GANFTXiMB7k3aC4sk3f0cQU25LNKzx+jZMxijqw==",
+      "type": "package",
+      "path": "system.linq.async/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/System.Linq.Async.dll",
+        "lib/net461/System.Linq.Async.xml",
+        "lib/netcoreapp3.1/System.Linq.Async.dll",
+        "lib/netcoreapp3.1/System.Linq.Async.xml",
+        "lib/netstandard2.0/System.Linq.Async.dll",
+        "lib/netstandard2.0/System.Linq.Async.xml",
+        "lib/netstandard2.1/System.Linq.Async.dll",
+        "lib/netstandard2.1/System.Linq.Async.xml",
+        "ref/net461/System.Linq.Async.dll",
+        "ref/net461/System.Linq.Async.xml",
+        "ref/netcoreapp3.1/System.Linq.Async.dll",
+        "ref/netcoreapp3.1/System.Linq.Async.xml",
+        "ref/netstandard2.0/System.Linq.Async.dll",
+        "ref/netstandard2.0/System.Linq.Async.xml",
+        "ref/netstandard2.1/System.Linq.Async.dll",
+        "ref/netstandard2.1/System.Linq.Async.xml",
+        "system.linq.async.5.0.0.nupkg.sha512",
+        "system.linq.async.nuspec"
+      ]
+    },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Discord.Net >= 3.13.1",
+      "Microsoft.DotNet.ILCompiler >= 8.0.2",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\BetaDeus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\BetaDeus\\source\\repos\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0.csproj",
+      "projectName": "DB RoleGiver .NET 8.0",
+      "projectPath": "C:\\Users\\BetaDeus\\source\\repos\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0.csproj",
+      "packagesPath": "C:\\Users\\BetaDeus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BetaDeus\\source\\repos\\DB RoleGiver .NET 8.0\\DB RoleGiver .NET 8.0\\obj\\publish\\win-x64\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\BetaDeus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Discord.Net": {
+            "target": "Package",
+            "version": "[3.13.1, )"
+          },
+          "Microsoft.DotNet.ILCompiler": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.2, )",
+            "autoReferenced": true
+          },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.2, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "runtime.win-x64.Microsoft.DotNet.ILCompiler",
+            "version": "[8.0.2, 8.0.2]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

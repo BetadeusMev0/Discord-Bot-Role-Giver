@@ -1,0 +1,27 @@
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.exe
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.deps.json
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.runtimeconfig.json
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.pdb
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.Commands.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.Core.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.Interactions.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.Rest.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.Webhook.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Discord.Net.WebSocket.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\Newtonsoft.Json.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\System.Interactive.Async.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\System.Linq.Async.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\bin\Release\net8.0\win-x64\System.Reactive.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.csproj.AssemblyReference.cache
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.AssemblyInfoInputs.cache
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.AssemblyInfo.cs
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.csproj.CoreCompileInputs.cache
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleG.7462C01F.Up2Date
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\refint\DB RoleGiver .NET 8.0.dll
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.pdb
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\DB RoleGiver .NET 8.0.genruntimeconfig.cache
+C:\Users\BetaDeus\source\repos\DB RoleGiver .NET 8.0\DB RoleGiver .NET 8.0\obj\Release\net8.0\win-x64\ref\DB RoleGiver .NET 8.0.dll
