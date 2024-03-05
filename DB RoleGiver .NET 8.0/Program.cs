@@ -195,10 +195,10 @@ namespace DB_Role_Giver
             }
             Role role;
             var guild = _client.GetGuild((ulong)command.GuildId);
+
             foreach (var oldRole in guild.Roles)
             {
-                if (oldRole.Members != null && oldRole.Members.Any()) role = new Role(oldRole.Id, "none", oldRole.Members.Where(x => x != null).First(), oldRole.Members.Where(x => x != null).First(), guild, oldRole.CreatedAt);
-                else role = new Role(oldRole.Id, "none", null, null, guild, oldRole.CreatedAt);
+                role = new Role(oldRole.Id, "none", oldRole.Members.FirstOrDefault(), oldRole.Members.FirstOrDefault(), guild, oldRole.CreatedAt); 
                 if (!await CheckRolePresence(oldRole.Id, guild.Id)) Logging(role);
             }
             await command.RespondAsync("Successfully");
@@ -293,10 +293,11 @@ namespace DB_Role_Giver
                 }
                 catch(Exception ex) { Console.WriteLine(ex.Message); }
             }
-        
+
+            SocketSlashCommandDataOption description_opt;
+            if ((description_opt = options.FirstOrDefault(x => x.Name == "description")) != null) roleDescription = (string)description_opt.Value;
 
 
-            
 
 
 
